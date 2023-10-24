@@ -1,0 +1,168 @@
+/* ALL EDIT ----------------- */
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+
+
+title {
+
+    display: none;
+
+
+}
+
+script {
+
+    display: none;
+
+
+}
+
+/* BATCAVE TITLE */
+
+h1 {
+
+
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    animation: glitch 3s linear infinite;
+
+}
+
+
+@keyframes glitch {
+
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(27deg);
+    }
+
+}
+
+/* ---------- SVG --------------- */
+
+
+svg {
+
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+path {
+
+    opacity: 1;
+    animation: losePath 3s linear infinite;
+    stroke-dasharray: 650;
+
+}
+
+@keyframes losePath {
+
+
+    to {
+        stroke-dashoffset: 1300;
+    }
+}
+
+/* ----------------------- */
+
+main {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.message {
+
+    width: 100%px;
+    height: 50px;
+    overflow: hidden;
+
+
+
+}
+
+#chatContainer {
+
+    overflow-y: scroll;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 3%;
+    left: 21%;
+
+    width: 800px;
+    height: 490px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
+
+input {
+
+    position: absolute;
+    right: 36.9%;
+    top: 72%;
+    width: 630px;
+    height: 30px;
+    z-index: 3;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
+button {
+
+
+    position: absolute;
+    width: 160px;
+    height: 45.6px;
+    left: 63.3%;
+    top: 71.6%;
+    z-index: 3;
+
+
+
+}
